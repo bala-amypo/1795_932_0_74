@@ -6,8 +6,9 @@ import jakarta.persistence.Id;
 
 @Entity
 public class StudentEntity{
-    @Id;
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private Long id;
     private String name;
     private String email;
@@ -20,7 +21,7 @@ public class StudentEntity{
         this.cgpa=cgpa;
     }
     public StudentEntity(){ 
-        
+
     }
     public void setName(String name){
         this.name = name;
@@ -37,7 +38,7 @@ public class StudentEntity{
     public void setCgpa(float cgpa){
         this.cgpa = cgpa;
     }
-    public String getCgpa(){
+    public float getCgpa(){
         return this.cgpa;
     }
 }
