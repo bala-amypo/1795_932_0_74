@@ -19,7 +19,9 @@ public class StudentEntity{
         this.email=email;
         this.cgpa=cgpa;
     }
-
+    public StudentEntity(){ 
+        
+    }
     public void setName(String name){
         this.name = name;
     }
